@@ -89,13 +89,19 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .big-pic {
     width: 400px;
     height: 600px;
     background-color: #777;
+}
+
+.small-pic {
+    background-color: #777;
+    width: 230px;
+    height: 330px;
 }
 
 .heading4 {
@@ -114,7 +120,7 @@ body {
 }
 
 .welcome {
-    width: 80vh;
+    width: 70vh;
     color: ghostwhite;
     font-size: 1.25rem;
     font-family: 'Manrope', sans-serif;
@@ -137,7 +143,7 @@ body {
 .cont {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .cont2 {
@@ -147,23 +153,48 @@ body {
 }
 
 .box-list {
+    width: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .box-lines {
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .line {
-    width: 50vh;
-    height: 1px;
-    color: blueviolet;
+    width: 30vh;
+    height: 4px;
+    background-color: blueviolet;
 }
 
-.skills {
-    /* display: flex; */
+.btns {
+    width: 66vh;
+    display: flex;
+    justify-content: space-between;
+
 }
+
+.more-btn {
+    display: block;
+    width: 115px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid ghostwhite;
+    color: ghostwhite;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 1.25rem;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+
 
 
