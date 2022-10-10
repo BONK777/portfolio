@@ -1,74 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-    <title>Store</title>
+    <title>My portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="" class="header-txt">Home page</a>
-            <a href="" class="header-txt">About me</a>
-            <a href="" class="header-txt">Portfolio</a>
-            <a href="" class="header-txt">Contacts</a>
+    <div class="hero">
+        <nav>   
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Aboute Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <a href="" class="btn">Subscribe</a>
         </nav>
-        <div class="nav-txt-block">
-            <h1 class="heading1">Pavel Timoshenko</h1>
-            <h2 class="heading2"><span class="f-color">Web</span> developer from Moscow</h2>
-        </div>
-    </header>
-    <div class="short-info">
-        <div class="box-info">
-            <h3 class="heading3">2018</h3>
-            <p class="wrd-info">Начало</p>
-        </div>
-        <div class="box-info">
-            <h3 class="heading3">25+</h3>
-            <p class="wrd-info">Реализовано проектов</p>
-        </div>
-        <div class="box-info">
-            <h3 class="heading3">7</h3>
-            <p class="wrd-info">Освоено программ</p>
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Timoshenko <span>Pavel</span></h1>
+            <h3>I`am a Web Developer</h3>
+            <div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
         </div>
     </div>
-    <div class="about-me">
-        <h4 class="heading4">About me</h4>
-        <div class="info-txt-block">
-            <div class="big-pic"></div>
-            <div class="cont">
-                <h5 class="heading5">Web developer</h5>
-                <p class="welcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae nesciunt reiciendis modi. Eaque molestiae deleniti nemo repellendus velit quibusdam natus dolores dignissimos debitis, dolorum vero maiores expedita corporis pariatur?</p>
-                <h5 class="heading5">Skills</h5>
-                <div class="cont2">
-                    <div class="box-list">
-                        <p class="list">Photoshop</p>
-                        <p class="list">Figma</p>
-                        <p class="list">illustrator</p>
-                        <p class="list">HTML / CSS / БЭМ</p>
-                        <p class="list">React</p>
-                    </div>
-                    <div class="box-lines">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="btns">
-                    <a class="more-btn">Portfolio</a>
-                    <a class="more-btn">Contacts</a>
-                </div>
+    <section class="about">
+        <div class="main">
+            <img src="img/section.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span>& Designer</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi necessitatibus repellendus sequi iste cum quo illum voluptas corrupti alias molestias itaque tenetur, non quae illo eveniet dicta minima et.</p>
+                <button type="button">Let`s Talk</button>
             </div>
         </div>
-    </div>
+    </section>
+    <div class="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
 
-    <script src="index.js"></script>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+        </div>
+    </div>
+    <div class="contact-me">
+        <p>Let me Get You A Beautiful Website.</p>
+        <a href="" class="button-two">Hire me</h1></a>
+    </div>
+    <footer>
+        <p>Timoshenko Pavel</p>
+        <p>For more HTMK, CSS and web coding - please click on the link below to subscribe to my channel:</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end">CopyRight by Timoshenko Pavel</p>
+    </footer>
 </body>
 </html>
