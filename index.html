@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
     <title>My portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
-    <div class="hero">
+    <!-- <header>
         <nav>   
             <h2 class="logo">Portfo<span>lio</span></h2>
             <ul>
@@ -21,6 +21,26 @@
             </ul>
             <a href="" class="btn">Subscribe</a>
         </nav>
+    </header> -->
+    <header>
+        <nav id="nav" class="side-nav">   
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul class="side-ul">
+                <li class="side-li"><a class="nav-link" href="">Home</a></li>
+                <li class="side-li"><a class="nav-link" href="#about">Aboute Me</a></li>
+                <li class="side-li"><a class="nav-link" href="#service">Services</a></li>
+                <li class="side-li"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="side-li"><a class="nav-link" href="#links">Contact Us</a></li>
+            </ul>
+            <a href="" class="btn">Subscribe</a>
+        </nav>
+        <button id="btn" class="hamburger hamburger--slider" type="button" onClick="toggle();">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+    </header>
+    <div class="hero">
         <div class="content">
             <h4>Hello, my name is</h4>
             <h1>Timoshenko <span>Pavel</span></h1>
@@ -33,21 +53,19 @@
 			</div>
         </div>
     </div>
-    <section class="about">
+    <section class="about" id="about">
         <div class="main">
             <img src="img/section.jpg">
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& Designer</span></h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi necessitatibus repellendus sequi iste cum quo illum voluptas corrupti alias molestias itaque tenetur, non quae illo eveniet dicta minima et.</p>
+                <p>I am a novice web developer in the frontend field, I am graduating from the 3rd year of the ITHub College of Information Technology, I am fond of programming and web design outside of school, I am self-learning and do not stand still. I have already taken programming courses since school time and I can't stop. You can view my works <a style="color: #f9004d;" href="https://github.com/BONK777">here</a>.</p>
                 <button type="button">Let`s Talk</button>
             </div>
         </div>
     </section>
-    <div class="service">
-        <div class="title">
-            <h2>Our Services</h2>
-        </div>
+    <div class="service" id="service">
+        <h2 class="title">Our Services</h2>
         <div class="box">
             <div class="card">
 				<i class="fas fa-bars"></i>
@@ -85,19 +103,19 @@
 			</div>
         </div>
     </div>
-    <div class="contact-me">
+    <div class="contact-me" id="skills">
         <p>See my works in real time.</p>
-        <a href="https://github.com/BONK777?tab=repositories" class="button-two">Hire me</h1></a>
+        <a href="https://hh.ru/resume/20373706ff0bde5b6a0039ed1f415374376643" class="button-two">Hire me</h1></a>
         <div class="portfolio__box">
             <div class="project" style="background-image: url('img/1p.png');"><a href="https://bonk777.github.io/APITrello/" class="project__link"></a></div>
             <div class="project" style="background-image: url('img/2p.png');"><a href="https://bonk777.github.io/Catzzz/" class="project__link"></a></div>
-            <div class="project" style="background-image: url('img/3p.png');"><a href="https://bonk777.github.io/" class="project__link"></a></div>
+            <div class="project" style="background-image: url('img/3p.png');"><a href="https://bonk777.github.io/my-blog" class="project__link"></a></div>
             <div class="project" style="background-image: url('img/4p.png');"><a href="https://bonk777.github.io/business-card/" class="project__link"></a></div>
             <div class="project" style="background-image: url('img/5p.png');"><a href="https://github.com/BONK777/ag-flowers" class="project__link"></a></div>
             <div class="project" style="background-image: url('img/6p.png');"><a href="https://github.com/BONK777/almost-free-designers-lance" class="project__link"></a></div>
         </div>
     </div>
-    <footer>
+    <footer id="links">
         <p>Timoshenko Pavel</p>
         <p>For more HTML, CSS and web coding - please click on the link below to subscribe to my channel:</p>
         <div class="social">
@@ -107,5 +125,28 @@
         </div>
         <p class="end">CopyRight by Timoshenko Pavel</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        function toggle() {
+            const nav = document.querySelector("#nav"),
+                btn = document.querySelector("#btn");
+            nav.classList.toggle("open");
+            btn.classList.toggle("is-active");
+        }
+        $(document).ready(function() {
+        
+        $('.nav-link').click(function(event) {
+            var target = $(this).attr('href');
+            $('html, body').animate({scrollTop: $(target).offset().top},1000);
+        });
+        lax.setup() // init
+const updateLax = () => {
+    lax.update(window.scrollY)
+    window.requestAnimationFrame(updateLax)
+}
+window.requestAnimationFrame(updateLax)
+        })
+    </script>
 </body>
 </html>
